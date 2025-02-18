@@ -1,0 +1,31 @@
+function afisare_fibonnaci(int n)
+begin
+    int a = 0;
+    int b = 1;
+    int c = 1;
+    int i = 0;
+    while(i < n)
+    begin
+        print(a);
+        c = a + b;
+        a = b;
+        b = c;
+        i = i + 1;  /* comenatarii */
+    end
+end
+
+function sum(int a;int b)
+begin
+    call afisare_fibonnaci(a);
+    print(a + b);
+end
+
+
+main
+begin
+    int var1 = 15;
+    int var2 = 10;
+    call sum(15;10);
+    
+end
+;;;
